@@ -1,0 +1,12 @@
+<table>
+    <tr>
+     <% for(const key of content.headers) { %>
+      <th><%= key %></th>
+     <% } %>
+    </tr>
+    <% for(const data of content.users) { %>
+    <tr>  
+     <td><%= data['emailId'] %></td>  
+    </tr>
+    <% } %>
+  </table>
